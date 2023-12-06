@@ -1,0 +1,228 @@
+/*fuente de starcraft*/
+@font-face {
+  font-family: 'StarcraftFont';
+  src: url(fuentes/Starcraft.ttf);
+}
+
+/*Título del HEADER*/
+header div {
+  color: white;
+  font-size: 6dvw;
+  font-family: 'StarcraftFont';
+  text-align: center;
+}
+
+
+/*color y separación del HEADER*/
+header {
+  padding: 1em;
+  background: -webkit-linear-gradient(bottom, #1e7b9090, #02153390);
+
+}
+
+.header {
+  color: white;
+  font-size: 3em;
+  font-family: 'StarcraftFont';
+  text-align: center;
+}
+
+/*barra de navegación*/
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor-botones-nav {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.2%;
+  gap: 4px;
+  padding: 4px;
+  border: 2px solid #22476b;
+  box-shadow: inset 0 0 10px rgba(102, 179, 255, .2);
+  background: rgba(30, 30, 30, 0.4);
+}
+
+/*estilo de los botones*/
+.botones-nav {
+  font-family: 'StarcraftFont';
+  display: inline-block;
+  background-color: #061F32;
+  padding: 10px;
+  transition: transform 0.2s ease;
+  font-size: 1.6dvw;
+}
+
+/*Los bontones hacen una animación de zoom*/
+.botones-nav:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 0px 4px black;
+}
+
+.botones-nav img {
+  height: 0.8em;
+}
+
+.botones-nav a {
+  color: rgb(246, 246, 246);
+  text-decoration: none;
+}
+
+.titulo {
+  text-align: justify;
+  padding: 5% 25%;
+}
+
+.titulo h1 {
+  text-align: center;
+}
+
+.contenedor-flecha {
+  position: relative;
+}
+
+.flecha img {
+  width: 100px;
+  height: auto;
+  position: sticky;
+  top: 70vh;
+  z-index: 1;
+  padding: 25px;
+}
+
+/*imagen de fondo y estilo*/
+body {
+  background-color: rgba(34, 42, 64, 1);
+  color: rgb(255, 254, 254);
+  background-repeat: none;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont;
+}
+
+/*tamaño del body y alineación*/
+.contenedor-main-galeria {
+  max-width: 560px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  padding: 5%;
+}
+
+
+.img-galeria {
+  width: 100%;
+  height: auto;
+}
+
+/*animacion imagenes y video*/
+@keyframes show {
+  from {
+    opacity: 0.20;
+    scale: 30%;
+  }
+
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
+
+img {
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+
+  animation-timeline: --image;
+  animation-name: show;
+
+  animation-range: entry 20% cover 60%;
+  animation-fill-mode: both;
+}
+
+iframe {
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+
+  animation-timeline: --image;
+  animation-name: show;
+
+  animation-range: entry 20% cover 60%;
+  animation-fill-mode: both;
+}
+
+
+/*estilos de la clase footer*/
+footer {
+  display: flex;
+  box-shadow: inset 0 0 10px rgba(102, 179, 255, 0.616);
+  background: rgba(30, 30, 30, 0.689);
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5dvw;
+  color: white;
+  padding: 0.5em;
+}
+
+@media screen and (max-width: 916px) {
+  header div {
+    font-size: 6.6dvw;
+  }
+
+  .botones-nav {
+    font-size: 2dvw;
+  }
+
+  .flecha img {
+    width: 50px;
+    padding: 15px;
+  }
+
+  .titulo {
+    padding: 5% 10%;
+  }
+}
+
+@media screen and (max-width:800) {
+  .flecha img {
+    width: 30px;
+    padding: 1px;
+  }
+
+  .titulo {
+    padding: 5% 10%;
+  }
+}
+
+@media screen and (max-width: 620px) {
+
+  header div {
+    font-size: 6.6dvw;
+  }
+
+  .botones-nav {
+    font-size: 2dvw;
+  }
+
+  .titulo {
+    padding: 5% 10%;
+  }
+}
+
+@media screen and (max-width: 535px) {
+
+  header div {
+    font-size: 6.6dvw;
+  }
+
+  .botones-nav {
+    font-size: 2dvw;
+  }
+
+  .titulo {
+    padding: 5% 10%;
+  }
+}

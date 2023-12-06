@@ -1,0 +1,247 @@
+/*fuente de starcraft*/
+@font-face {
+  font-family: 'StarcraftFont';
+  src: url(fuentes/Starcraft.ttf);
+}
+
+/*Título del HEADER principal*/
+header div {
+  color: white;
+  font-size: 6dvw;
+  font-family: 'StarcraftFont';
+  text-align: center;
+}
+
+/*color y separación del HEADER principal*/
+header {
+  padding: 1em;
+  background: -webkit-linear-gradient(bottom, #1e7b9090, #02153390);
+
+}
+
+
+/*barra de navegación*/
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor-botones-nav {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.2%;
+  gap: 4px;
+  padding: 4px;
+  border: 2px solid #22476b;
+  box-shadow: inset 0 0 10px rgba(102, 179, 255, .2);
+  background: rgba(30, 30, 30, 0.4);
+}
+
+/*estilo de los botones*/
+.botones-nav {
+  font-family: 'StarcraftFont';
+  display: inline-block;
+  background-color: rgba(82, 123, 184, 0.563);
+  padding: 10px;
+  transition: transform 0.2s ease;
+  font-size: 1.6dvw;
+}
+
+/*Los bontones hacen una animación de zoom*/
+.botones-nav:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 0px 4px black;
+}
+
+.botones-nav img {
+  height: 0.8em;
+}
+
+.botones-nav a {
+  color: rgb(246, 246, 246);
+  text-decoration: none;
+}
+
+/*imagen de fondo y estilo*/
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url(/imagenes/fondopantalla.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+}
+
+/*tamaño del body y alineación*/
+body {
+  margin: 0;
+  background-size: cover;
+  min-height: 100dvh;
+}
+
+
+
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  color: white;
+  padding: 20px;
+}
+
+.contenedor-lista {
+  font-size: 1.6dvw;
+  background-color: rgba(6, 32, 54, 0.539);
+  border: 2px solid rgb(6, 32, 54);
+  border-radius: 10px;
+  text-align: center;
+  list-style: none;
+
+}
+
+.contenedor-lista li {
+
+  text-align: left;
+}
+
+.lista1 {
+  margin-left: 30px;
+}
+
+.lista2 {
+  margin-left: 50px;
+}
+
+.lista3 {
+  margin-left: 50px;
+}
+
+
+
+.contenedor-nave {
+  max-width: 100px;
+  height: auto;
+  padding: 5px;
+  animation: mover 10s infinite linear;
+  filter: brightness(140%);
+}
+
+.contenedor-nave img {
+  max-width: 100%;
+}
+
+/*mueve la nave de un extremo al otro en horizontal*/
+@keyframes mover {
+  0% {
+    transform: translateX(10vw);
+  }
+
+  50% {
+    transform: translateX(calc(80dvw - 100px));
+  }
+
+  75% {
+    transform: translateX(80dvw) rotate(180deg);
+  }
+
+  100% {
+    transform: translateX(0px) rotate(180deg);
+  }
+}
+
+
+
+
+/*estilos footer*/
+footer {
+  bottom: 0px;
+  width: 100%;
+  box-shadow: inset 0 0 10px rgba(102, 179, 255, 0.616);
+  background: rgba(30, 30, 30, 0.689);
+  text-align: center;
+  font-size: 1.5dvw;
+  color: white;
+  padding: 1em 0;
+}
+
+@media screen and (max-width: 916px) {
+  header div {
+    font-size: 6.6dvw;
+  }
+
+  .botones-nav {
+    font-size: 2dvw;
+  }
+
+}
+
+@media screen and (max-width: 800) {
+  .contenedor-nave img {
+    max-width: 1px;
+  }
+
+  .nave {
+    max-width: 100%;
+    height: auto;
+    padding: 5px;
+    animation: mover 10s infinite linear;
+    filter: brightness(140%);
+  }
+
+}
+
+@media screen and (max-width: 659px) {
+  .contenedor-lista li {
+    margin-left: 100px;
+  }
+}
+
+@media screen and (max-width:550px) {
+  .contenedor-lista li {
+    margin-left: 20px;
+  }
+
+  .lista1 {
+    margin-left: 50px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+
+  header div {
+    font-size: 6.6dvw;
+  }
+
+  .botones-nav {
+    font-size: 2dvw;
+  }
+
+  .contenedor-nave {
+    max-width: 100px;
+    height: auto;
+    padding: 5px;
+    animation: mover 10s infinite linear;
+    filter: brightness(140%);
+  }
+
+}
+
+@media screen and (max-width: 535px) {
+
+  header div {
+    font-size: 6.6dvw;
+  }
+
+  .botones-nav {
+    font-size: 2dvw;
+  }
+
+  .contenedor-nave {
+    max-width: 100px;
+    height: auto;
+    padding: 5px;
+    animation: mover 10s infinite linear;
+    filter: brightness(140%);
+  }
+}
+ 

@@ -1,0 +1,285 @@
+/*fuente de starcraft*/
+@font-face {
+  font-family: 'StarcraftFont';
+  src: url(fuentes/Starcraft.ttf);
+}
+
+/*Título del HEADER principal*/
+header div {
+  color: white;
+  font-size: 6dvw;
+  font-family: 'StarcraftFont';
+  text-align: center;
+}
+
+/*color y separación del HEADER principal*/
+header {
+  padding: 1em;
+  background: -webkit-linear-gradient(bottom, #1e7b9090, #02153390);
+
+}
+
+
+/*barra de navegación*/
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor-botones-nav {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.2%;
+  gap: 4px;
+  padding: 4px;
+  border: 2px solid #22476b;
+  box-shadow: inset 0 0 10px rgba(102, 179, 255, .2);
+  background: rgba(30, 30, 30, 0.4);
+}
+
+/*estilo de los botones*/
+.botones-nav {
+  font-family: 'StarcraftFont';
+  display: inline-block;
+  background-color: rgba(82, 123, 184, 0.563);
+  padding: 10px;
+  transition: transform 0.2s ease;
+  font-size: 1.6dvw;
+}
+
+/*Los bontones hacen una animación de zoom*/
+.botones-nav:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 0px 4px black;
+}
+
+.botones-nav img {
+  height: 0.8em;
+}
+
+.botones-nav a {
+  color: rgb(246, 246, 246);
+  text-decoration: none;
+}
+
+
+/*imagen de fondo y estilo*/
+body {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.558)), url(/imagenes/fondopantalla.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont;
+}
+
+/*tamaño del body y alineación*/
+body {
+  margin: 0;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.texto-introduccion {
+  color: white;
+  padding: 25px;
+}
+
+body h2 {
+  text-align: center;
+  font-size: 2.5dvw;
+}
+
+body p {
+  font-size: 1.6dvw;
+  text-align: justify;
+}
+
+.contenedor-main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: 1fr;
+  gap: 1dvw;
+  padding: 1%;
+  max-width: 100dvw;
+  justify-content: center;
+}
+
+.contenedor-main div {
+  background-color: rgba(6, 32, 54, 0.539);
+  border: 2px solid rgb(6, 32, 54);
+}
+
+
+.contenedor-tabla {
+  font-size: 1.2dvw;
+  text-align: left;
+}
+
+table {
+  color: white;
+  border-collapse: collapse;
+  width: 100%;
+  height: 100%;
+}
+
+th,
+td {
+  border: 4px solid rgb(6, 32, 54);
+}
+
+.contenedor-columnas {
+  color: white;
+}
+
+#columnas {
+  column-count: 3;
+  column-gap: 5px;
+  column-rule: 4px groove rgb(6, 32, 54);
+  list-style: none;
+}
+
+.enlace-descarga {
+  display: inline-block;
+  text-decoration: none;
+  color: orange;
+  transition: transform 0.4s ease;
+}
+
+.enlace-descarga:hover {
+  transform: scale(1.3);
+}
+
+.contenedor-svg {
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor-svg img {
+  max-width: 100%;
+}
+
+
+.contenedor-main div:nth-child(3) {
+  position: relative;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+}
+
+.mapa iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/*estilos footer*/
+footer {
+  bottom: 0px;
+  width: 100%;
+  box-shadow: inset 0 0 10px rgba(102, 179, 255, 0.616);
+  background: rgba(30, 30, 30, 0.689);
+  text-align: center;
+  font-size: 1.5dvw;
+  color: white;
+  padding: 1em 0;
+}
+
+
+@media screen and (min-width: 917px) {
+  .contenedor-tabla {
+    font-size: 1.3dvw;
+    text-align: left;
+  }
+
+  #columnas {
+    font-size: 1.6dvw;
+    text-align: center;
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 916px) {
+  header div {
+    font-size: 6.6dvw;
+  }
+
+  .botones-nav {
+    font-size: 2dvw;
+  }
+
+  .contenedor-tabla {
+    font-size: 1.4dvw;
+  }
+
+  body h2 {
+    text-align: center;
+    font-size: 3dvw;
+  }
+
+  body p {
+    font-size: 2dvw;
+    text-align: justify;
+  }
+
+  #columnas {
+    font-size: 2dvw;
+    text-align: center;
+    padding: 20px;
+  }
+}
+
+
+
+@media screen and (max-width: 620px) {
+
+  header div {
+    font-size: 6.6dvw;
+  }
+
+  .botones-nav {
+    font-size: 2dvw;
+  }
+
+  .contenedor-tabla {
+    font-size: 2dvw;
+    text-align: left;
+  }
+
+  body h2 {
+    text-align: center;
+    font-size: 3dvw;
+  }
+
+  body p {
+    font-size: 2dvw;
+    text-align: justify;
+  }
+
+  .contenedor-columnas {
+    color: white;
+    margin: 0;
+    max-width: 100%;
+  }
+
+  #columnas {
+    font-size: 2.5dvw;
+    padding: 70px;
+  }
+}
+
+@media screen and (max-width: 535px) {
+  #columnas {
+    font-size: 2.6dvw;
+    padding: 80px;
+  }
+
+  header div {
+    font-size: 6.6dvw;
+  }
+
+  .botones-nav {
+    font-size: 2dvw;
+  }
+}

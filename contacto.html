@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Starcraft 2</title>
+  <link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="css/contactos.css" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <div>Starcraft 2</div>
+  </header>
+  <nav>
+    <div class="contenedor-botones-nav">
+      <span class="botones-nav"><a href="index.html"><img src="imagenes/casa-nav.png" alt="imagen-casa"></a></span>
+      <span class="botones-nav"><a href="facciones.html">Facciones</a></span>
+      <span class="botones-nav"><a href="juego.html">Sistema de juego</a></span>
+      <span class="botones-nav"><a href="galeria.html">Galeria</a></span>
+      <span class="botones-nav"><a href="contacto.html">Contacto</a></span>
+    </div>
+  </nav>
+
+  <form>
+    <div class="formulario"><label>Nombre de usuario: </label>
+      <input type="text" size="40" title="Escribe tu nombre" name="nombre" autofocus required />
+      <br>
+      <br>
+      <label>Raza favorita:</label>
+      <br>
+      <div class="radio">
+        <div><input type="radio" name="raza" value="Terran" checked /> Terran</div>
+        <div><input type="radio" name="raza" value="Zerg" /> Zerg</div>
+        <div><input type="radio" name="raza" value="Protoss" /> Protoss</div>
+      </div>
+      <br>
+      <label>Unidad favorita:</label>
+      <div class="checkbox">
+        <div><input type="checkbox" name="unidad" value="soldado" /> Soldado</div>
+        <div><input type="checkbox" name="unidad" value="tanque" /> Tanque</div>
+        <div><input type="checkbox" name="unidad" value="nave" /> Nave</div>
+      </div>
+      <br>
+      <label>Número de unidades: </label>
+      <div class="numerico">
+        <input type="number" step="1" min="14" max="200" value="14" title="Numero de unidades" name="numero">
+      </div>
+      <br>
+      <label>¿Qué te gustaría incluir en el juego?:</label> <br>
+      <textarea name="descripcion"></textarea>
+      <br><br>
+      <input type="submit" name="enviar" value="Enviar" />
+      <br>
+      <br>
+    </div>
+
+  </form>
+
+
+
+  <footer>
+    Manuel José Muñoz Marín - CPIFP Alan Turing 1º DAM - Proyecto web LDM &#xA9;
+  </footer>
+</body>
+
+</html>
